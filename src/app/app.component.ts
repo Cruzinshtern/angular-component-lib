@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CustomAngularTableComponent } from '../../projects/custom-angular-component-lib/src/public-api';
+import { CustomAngularPaginatorComponent } from '../../projects/custom-angular-component-lib/src/lib/custom-angular-paginator/custom-angular-paginator.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CustomAngularTableComponent],
+  imports: [RouterOutlet, CustomAngularTableComponent, CustomAngularPaginatorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

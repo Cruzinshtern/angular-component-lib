@@ -1,0 +1,13 @@
+<div class="paginator-wrapper">
+    <div class="length-selector">
+      <span class="length-selector_label">Items per page: </span>
+      <select class="length-selector_selector" (change)="handlePageSizeOptionSelect($event)">
+        <option *ngFor="let option of pageSizeOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    <div class="navigator">
+      <span>Page {{ page }} of {{ pages }}</span>
+      <span class="navigator_arrow" [ngClass]="{ 'disabled' : page === 1 }" (click)="handlePrev()">&#10092;</span>
+      <span class="navigator_arrow" [ngClass]="{ 'disabled' : page === pages }" (click)="handleNext()">&#10093;</span>
+    </div>
+  </div>
