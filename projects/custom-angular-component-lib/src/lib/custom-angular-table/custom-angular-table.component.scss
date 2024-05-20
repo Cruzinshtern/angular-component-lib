@@ -1,0 +1,20 @@
+.table {
+    border-spacing: unset;
+    width: 100%;
+    &_headers-row {
+      background-color: #cccccc;
+      &_cell {
+        padding: 10px 15px;
+      }
+    }
+    &_data-row {
+      &:hover {
+        cursor: pointer;
+      }
+      &_cell {
+        padding: 8px 12px;
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+  }

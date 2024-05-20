@@ -1,0 +1,10 @@
+<table class="table">
+    <tr class="table_headers-row">
+      <th class="table_headers-row_cell" *ngFor="let column of columns()">{{ column }}</th>
+    </tr>
+    <tr class="table_data-row" *ngFor="let row of tableData()">
+      <td class="table_data-row_cell" *ngFor="let column of columns(); index as i">
+        {{ row[columns()[i]] }}
+      </td>
+    </tr>
+  </table>
